@@ -102,34 +102,35 @@
       <div class="row">
         <!-- single car -->
         <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
-          <div class="card car-card">
-            <img src="img/vento.jpg" class="card-img-top car-img" alt="">
-            <!-- card body -->
-            <div class="card-body">
-              <div class="car-info d-flex justify-content-between">
-                <!-- first flex child -->
-                <div class="car-text text-uppercase">
-                  <h6 class="font-weight-bold">volkswagen</h6>
-                  <h6>vento</h6>
-                </div>
-                <!-- second flex child -->
-                <h5 class="car-value align-self-center py-2 px-3">₹
-                  <span class="car-price">500000</span>
-                </h5>
-              </div>
-            </div>
-            <!-- end of card -->
-            <div class="card-footer text-capitalize d-flex justify-content-between">
-              <p><span><i class="fas fa-car"></i></span>sedan</p>
-              <p><span><i class="fas fa-cogs"></i></span>Manual</p>
-              <p><span><i class="fas fa-gas-pump"></i></span>100000km</p>
-            </div>
-          </div>
+          <div class="card car-card" onclick="navigateToDetails('vento.html')">
+  <img src="img/vento.jpg" class="card-img-top car-img" alt="">
+  <!-- card body -->
+  <div class="card-body">
+    <div class="car-info d-flex justify-content-between">
+      <!-- first flex child -->
+      <div class="car-text text-uppercase">
+        <h6 class="font-weight-bold">volkswagen</h6>
+        <h6>vento</h6>
+      </div>
+      <!-- second flex child -->
+      <h5 class="car-value align-self-center py-2 px-3">₹
+        <span class="car-price">500000</span>
+      </h5>
+    </div>
+  </div>
+  <!-- end of card -->
+  <div class="card-footer text-capitalize d-flex justify-content-between">
+    <p><span><i class="fas fa-car"></i></span>sedan</p>
+    <p><span><i class="fas fa-cogs"></i></span>Manual</p>
+    <p><span><i class="fas fa-gas-pump"></i></span>100000km</p>
+  </div>
+</div>
+
         </div>
         <!--end of single car -->
         <!-- single car -->
         <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
-          <div class="card car-card">
+          <div class="card car-card" onclick="navigateToDetails('ecosport.html')">
             <img src="img/eco.jpg" class="card-img-top car-img" alt="">
             <!-- card body -->
             <div class="card-body">
@@ -177,7 +178,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="gallery-item">
-            <img src="img/car-american-1.jpeg" alt="car" class="img-fluid gallery-img">
+            <img src="img/vento.jpg" alt="car" class="img-fluid gallery-img">
           </div>
         </div>
         <!-- end of first column -->
@@ -186,13 +187,13 @@
             <!-- first item -->
             <div class="col-sm-6">
               <div class="gallery-item">
-                <img src="img/car-american-2.jpeg" alt="car" class="img-fluid gallery-img">
+                <img src="img/eco.jpg" alt="car" class="img-fluid gallery-img">
               </div>
             </div>
             <!-- second item -->
             <div class="col-sm-6">
               <div class="gallery-item">
-                <img src="img/car-american-3.jpeg" alt="car" class="img-fluid gallery-img">
+                <img src="img/vento3.jpg" alt="car" class="img-fluid gallery-img">
               </div>
             </div>
           </div>
@@ -200,13 +201,13 @@
             <!-- first item -->
             <div class="col-sm-6">
               <div class="gallery-item">
-                <img src="img/car-american-4.jpeg" alt="car" class="img-fluid gallery-img">
+                <img src="img/eco3.jpg" alt="car" class="img-fluid gallery-img">
               </div>
             </div>
             <!-- second item -->
             <div class="col-sm-6">
               <div class="gallery-item">
-                <img src="img/car-american-5.jpeg" alt="car" class="img-fluid gallery-img">
+                <img src="img/vento6.jpg" alt="car" class="img-fluid gallery-img">
               </div>
             </div>
           </div>
@@ -331,6 +332,12 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- script js -->
   <script src="js/script.js"></script>
+
+  <script>
+    function navigateToDetails(page) {
+      window.location.href = page;
+    }
+  </script>
 </body>
 
 </html>
