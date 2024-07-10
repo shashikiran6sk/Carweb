@@ -83,7 +83,7 @@ body{
 }
 .height-max{
   min-height: calc(100vh - 76px);
-  background:url('../img/cv.jpg');
+  background:url('../img/cv.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
